@@ -1,0 +1,581 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    background-color: #EAC926;
+    height: 200px;
+}
+
+header div.logo {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form {
+    width: 50%;
+    height: 30px;
+
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    border: none;
+}
+
+form .input,
+button {
+    border: none;
+    
+    outline: none;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: none;
+    font: inherit;
+}
+
+header .form .input {
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    border-radius: 5px 0 0 5px;
+    padding-left: 5px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    color: #666;
+    width: 30%;
+    border-radius: 0 5px 5px 0;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 30px;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 2px 6px;
+    width: 40px;
+}
+
+
+
+article div.main-article {
+    width: 100%;
+}
+
+.price {
+    width: 30%;
+    font-size: 18px;
+}
+
+.discount {
+    padding: 20px;
+    width: 70%;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    text-align: center;
+    
+}
+
+
+
+
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+}
+
+main section article {
+    background-color: #fff;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+
+/* MAIN */
+
+
+.main__container {
+    width: 90%;
+    margin: auto;
+}
+
+.main__articulo {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+main section article {
+    position: relative;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 122px;
+}
+
+.main-article {
+    padding: 20px 0 10px 0;
+    border-top: solid 1px #ebebeb;
+
+}
+
+.main__box__detail__articulo {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+/* HEADER */
+.header__nav {
+    display: none;
+}
+
+h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*  FOOTER  */
+
+footer {
+    margin: auto;
+    width: 98%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    position: relative;
+}
+
+footer .footer__card{
+    text-align: center;
+    /* width: 90%; */
+    margin: 20px;
+}
+
+footer i {
+    color: #0044AA;
+    font-size: 60px;
+}
+
+footer h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer p {
+    font-size: 15px;
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 5px;
+}
+
+
+/* ANIMACIONES */
+
+.main__articulo .description {
+    color: #FFF;
+    transition: color 0.3s; 
+}
+
+.main__articulo .fa-truck {
+    transition: transform 0.3s; 
+}
+
+.main__articulo:hover .description {
+    color: #666; 
+}
+
+.main__articulo:hover .fa-truck {
+    transform: rotate(-90deg); 
+}
+
+/* LOGIN */
+
+.main__container__form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+}
+
+.btn__form {
+    margin-top: 20px;
+    padding: 4px 0;
+    background-color: #0044AA;
+    color: #FFF;
+    transition: background-color 0.2s;
+}
+
+.form_login input {
+    border: none;
+    border-radius: 5px;
+}
+
+.form_login input[type="text"],
+input[type="password"] {
+    padding-left: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: white;
+}
+
+.btn__form:hover {
+    background-color: #0022AA;
+}
+
+/* REGISTER */
+
+.main__register {
+    margin: auto;
+}
+
+.register {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: start;
+    gap: 20px;
+    width: 90%;
+}
+
+.register input {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+
+.register input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='password'] {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.register input::placeholder {
+    font-size: 11px;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.intereses label,
+.intereses input[type="checkbox"] {
+    display: inline-block;
+}
+
+.radiobuttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.register h6 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form__file__input {
+    margin: 0;
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register input[type='reset'],
+input[type='submit'] {
+    width: 100%;
+}
+
+@media (min-width: 370px) {
+    
+/* HEADER */
+    header {
+        background-color: #EAC926;
+        height: 220px;
+    }
+
+    header div.top-header p {
+        width: 33%;
+        display: inline;
+
+    }
+
+    .top-header {
+        justify-content: center;
+    }
+
+    header .form {
+        width: none;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+
+    .header__text p {
+        padding: 0;
+    }
+
+    div.top-header .logo,
+    .form,
+    .header__text {
+        width: 33%;
+    }
+
+    /* NAV */
+    div.burger-menu {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+    }
+
+    .header__nav ul li {
+        padding: 0;
+    }
+
+
+
+    .main__articulo {
+        max-width: 250px;
+        transition: box-shadow 0.3s;
+    }
+
+    /* ANIMACIONES */
+    .main__articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+    .products {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* FOOTER */
+    footer .footer__card {
+        text-align: center;
+        max-width: 400px;
+        margin: 20px;
+    }
+
+    /* LOGIN */
+
+    .section__form {
+        width: 90%;
+    }
+
+    .form_login input[type="text"],
+    input[type="password"] {
+        padding-left: 10px;
+        padding: 5px;
+    }
+
+    .form_login {
+        gap: 20px;
+    }
+
+    .btn__form__login {
+        margin-top: 10px;
+    }
+
+    /* REGISTER */
+
+    .register {
+        max-width: 540px;
+    }
+
+    .intereses,
+    .form__file__input {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+header {
+        background-color: #EAC926;
+        height: 40%;
+        margin: 0;
+        padding-bottom: 1px;
+    }
+
+    header .form {
+        width: 33%;
+    }
+
+    header .form button {
+        max-width: 50px;
+    }
+
+    header .form input {
+        width: 90%;
+    }
+
+    .header__nav ul {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .discount {
+        text-align: center;
+    }
+
+    h3 {
+
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+
+    .section__form {
+        width: 70%;
+    }
+
+    .form_login input[type="text"],
+    input[type="password"] {
+        padding-left: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer .footer__card {
+        text-align: center;
+        max-width: 300px;
+    }}
